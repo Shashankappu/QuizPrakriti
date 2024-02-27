@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:background="@color/white"
+        tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Welcome_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_illustration"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/Welcome_TV"
+        app:lottie_rawRes="@raw/startillustration"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lottie_illustration"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:layout_below="@+id/editName"
+        android:background="@drawable/custom_edittext"
+        android:hint="Enter your age"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editName"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/custom_button"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+
+
+</RelativeLayout>
+
+

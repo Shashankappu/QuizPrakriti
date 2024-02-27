@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuizPrakriti" parent="Theme.AppCompat.DayNight.NoActionBar">
+         <item name="colorPrimary">@color/Robin_egg_blue</item>
+         <item name="android:colorSecondary">@color/orange</item>
+
+    </style>
+
+    <style name="Theme.QuizPrakriti" parent="Base.Theme.QuizPrakriti" />
+</resources>
