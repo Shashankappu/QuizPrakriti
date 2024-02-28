@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("name",editName.getText().toString());
                 i.putExtra("age",editAge.getText().toString());
                 startActivity(i);
+                finish();
             }
         });
     }
